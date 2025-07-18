@@ -123,8 +123,8 @@ app.delete('/delete-product/:id', async (req, res) => {
 
 // ✅ Razorpay Config
 const razorpay = new Razorpay({
-  key_id: process.env.RAZORPAY_KEY,
-  key_secret: process.env.RAZORPAY_SECRET
+  key_id: process.env.rzp_test_J3RQxpf2LltUfP,
+  key_secret: process.env.Vg0fZVRxTR6QSTtZDuU5W2nV
 });
 
 // ✅ Create Razorpay Order
