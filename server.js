@@ -122,9 +122,10 @@ app.delete('/delete-product/:id', async (req, res) => {
 });
 
 // ✅ Razorpay Config
+// ✅ Razorpay Config – correct way to access env variables
 const razorpay = new Razorpay({
-  key_id: process.env.rzp_test_J3RQxpf2LltUfP,
-  key_secret: process.env.Vg0fZVRxTR6QSTtZDuU5W2nV
+  key_id: process.env.RAZORPAY_KEY,
+  key_secret: process.env.RAZORPAY_SECRET
 });
 
 // ✅ Create Razorpay Order
